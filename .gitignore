@@ -1,0 +1,13 @@
+*.bundle.*
+dist/
+node_modules/
+*.egg-info/
+.ipynb_checkpoints
+npm-debug.log
+package-lock.json
+yarn.lock
+.project
+.settings
+.ipynb
+.idea
+.iml

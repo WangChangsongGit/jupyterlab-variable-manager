@@ -1,0 +1,49 @@
+{
+  "name": "@smart-ai/variable-manager",
+  "version": "0.3.0",
+  "description": "A JupyterLab extension to manage variables in the kernel, including getting, displaying, deleting, modifying, etc.",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/WangChangsongGit/jupyterlab-variable-manager",
+  "bugs": {
+    "url": "https://github.com/WangChangsongGit/jupyterlab-variable-manager/issues"
+  },
+  "license": "MIT",
+  "author": "WangChangsong",
+  "files": [
+    "dist/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WangChangsongGit/jupyterlab-variable-manager.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^1.1.0",
+    "@jupyterlab/apputils": "^1.1.0",
+    "@jupyterlab/console": "^1.1.0",
+    "@jupyterlab/coreutils": "^1.1.0",
+    "@jupyterlab/csvviewer": "^1.1.0",
+    "@jupyterlab/notebook": "^1.1.0",
+    "@jupyterlab/services": ">=4.0.0",
+    "@phosphor/datagrid": "^0.1.11"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "typescript": "^3.5"
+  },
+  "jupyterlab": {
+    "extension": true
+  }
+}
